@@ -1,0 +1,16 @@
+-todo list 에서 해결할 점
+    generateTodosId(){
+            const lastId = this.state.todos[this.state.todos.length-1];
+            console.log(lastId)
+           // console.log(lastId.id)
+            if (lastId){
+                return lastId.id+1;
+                // console.log(lastId.id+1);
+            }
+            else return 1;
+        }
+
+     아이디 값이 계속 1 이 된다.
+
+- 함수형 콤포넌트와 클라스형 콤포넌트 차이점
+    state 가 없다. lifecycle 기능이 없다.
